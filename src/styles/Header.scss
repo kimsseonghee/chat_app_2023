@@ -1,0 +1,100 @@
+$background-color: #3a5cd5;
+
+// Header container
+header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 64px;
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  color: #ddd;
+  padding: 0 15px;
+  box-sizing: border-box;
+}
+
+// Status_bar
+.status_bar {
+  .left_item,
+  .center_item,
+  .right_item {
+    display: inline-block;
+    color: #555;
+    font-size: 14px;
+    font-weight: normal;
+  }
+
+  .icons { // status_bar icon
+    font-size: 16px;
+    margin-right: 3px;
+  }
+  .icons:last-of-type{
+    margin-right: none;
+  }
+
+  .center_item {
+    font-size: 18px;
+    span.time {
+      font-size: 14px;
+      width: 100%;
+      margin-left: 35px;
+      &:nth-child(2) {
+        margin-left: 2px;
+      }
+    }
+  }
+}
+
+// title_bar
+.title_bar {
+  z-index: 1000;
+  margin: 0 auto;
+  position: fixed;
+  top: 30px;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 35px;
+  width: 95%;
+  box-sizing: border-box;
+
+  > * {
+    font-size: 16px;
+    padding: 0 15px;
+  }
+
+  > h1 {
+    order: 2;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    color: $background-color;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .left_item {
+    order: 1;
+    text-align: left;
+
+    > a { // 우측 text
+      color: #555;
+      font-size: 15px;
+      opacity: 0.5;
+    }
+  }
+
+  .right_item {
+    order: 3;
+    text-align: right;
+    font-size: 20px;
+
+    > a { // 좌측 icon
+      color: #555;
+    }
+  }
+}

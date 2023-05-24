@@ -1,0 +1,39 @@
+@import "Reset";
+@import "Header";
+@import "Tab";
+
+*{
+  font-family: 'Roboto', sans-serif;
+}
+body {
+  font-size: 12px;
+  a {
+    color: #000;
+    text-decoration: none;
+
+    &:link,
+    &:visited {
+      color: #000;
+      text-decoration: none;
+    }
+
+    &:hover,
+    &:focus,
+    &:active {
+      color: #000;
+      text-decoration: none;
+    }
+  }
+  img {
+    max-width: 100%;
+  }
+}
+.empty {
+  display: block;
+  width: 40px;
+  height: 40px;
+  margin: 10px 15px;
+  border-radius: 50%;
+  background: url(../images/my.gif) 0 0 no-repeat;
+  background-size: cover;
+}

@@ -1,0 +1,56 @@
+[
+  {
+    "id":"1",
+    "name":"이준호",
+    "profile_message":"저녁 치킨 어때?",
+    "email":"abc@gmail.com",
+    "userimg":"https://i.pinimg.com/originals/0d/2d/de/0d2dde0a0260b2696fa452cfab913fe4.gif",
+    "message" : ["응~ 오랜만이야","저녁 치킨 어때?"],
+    "images":"https://i.pinimg.com/564x/c0/b2/bc/c0b2bc42724a0a1448ee095fc6f4c8d7.jpg"
+  },
+  {
+    "id":"2",
+    "name":"우희윤",
+    "profile_message":"오늘 날씨 좋다.",
+    "email":"abc@gmail.com",
+    "userimg":"https://i.pinimg.com/564x/c0/68/72/c06872075173cc8fd957ac62098ac659.jpg",
+    "message" : ["응~ 오랜만이야","오늘 날씨 좋다."],
+    "images":"https://i.pinimg.com/564x/ce/1e/09/ce1e0912ebd8e3def7ead208685ee201.jpg"
+  },
+  {
+    "id":"3",
+    "name":"박지웅",
+    "profile_message":"지금 어디 있어?",
+    "email":"abc@gmail.com",
+    "userimg":"https://i.pinimg.com/564x/e7/28/f1/e728f1b251b99429419c054ca729cf35.jpg",
+    "message" : ["응~ 오랜만이야","지금 어디 있어?"],
+    "images":"https://i.pinimg.com/564x/19/1b/db/191bdb786ce5eb1b3fae69fb32cff0dd.jpg"
+  },
+  {
+    "id":"4",
+    "name":"이현정",
+    "profile_message":"노래 진짜 좋아!",
+    "email":"abc@gmail.com",
+    "userimg":"https://i.pinimg.com/564x/ec/db/57/ecdb57608a65bc2563bb3eeddf7ad709.jpg",
+    "message" : ["응~ 오랜만이야","노래 진짜 좋아!"],
+    "images":"https://i.pinimg.com/564x/0a/31/eb/0a31ebd602406e17ab8fba27d8e8d72d.jpg"
+  },
+  {
+    "id":"5",
+    "name":"정민정",
+    "profile_message":"너 뭐하고 있어?",
+    "email":"abc@gmail.com",
+    "userimg":"https://i.pinimg.com/564x/91/33/21/9133211816c4a74fa51e0ae9103e9f6e.jpg",
+    "message" : ["응~ 오랜만이야","너 뭐하고 있어?"],
+    "images":"https://i.pinimg.com/564x/04/50/46/045046913be75f48cdcadf90b0c50dcb.jpg"
+  },
+  {
+    "id":"6",
+    "name":"김하경",
+    "profile_message":"오늘 저녁에 봐!",
+    "email":"abc@gmail.com",
+    "userimg":"https://i.pinimg.com/564x/64/31/ef/6431effb9e0697c7e4bd5e7444e8c005.jpg",
+    "message" : ["응~ 오랜만이야","오늘 저녁에 봐!"],
+    "images":"https://i.pinimg.com/564x/d1/3e/5a/d13e5aa6423a1344f2f2e001a814e9df.jpg"
+  }
+]

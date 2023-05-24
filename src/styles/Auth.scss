@@ -1,0 +1,101 @@
+@import url(../styles/Common.scss);
+$background-color: #3a5cd5;
+div.bg{
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  background: #ffffff;
+  width: 100%;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  span.login{
+    font-family: 'Sora', sans-serif;
+    font-size: 50px;
+    font-weight: 400;
+    color:$background-color;
+    margin-bottom: 30px;
+  }
+  form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+
+    label{
+      text-indent: 10px;
+      display: inline-block;
+      width: 100%;
+      font-size: 14px;
+      color: #555;
+      margin: 10px;
+    }
+    input{
+      width: 250px;
+      display: flex;
+      flex-direction: column;
+      padding: 8px;
+      box-sizing: border-box;
+      align-items: center;
+      border-radius: 15px;
+      border: 1px solid #ddd;
+    }
+    input.submit{
+      margin-top: 10px;
+      background:$background-color;
+      color: #fff;
+      border: none;
+      margin-top: 35px;
+      border-radius: 5px;
+      &:hover{
+      background: #fff;
+      border: 1px solid $background-color;
+      color:$background-color;
+      }
+    }
+  }
+}
+span.account{
+  margin-top: 10px;
+}
+div.btn{
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  button{
+    width: 250px;
+    padding: 4px;
+    display: flex;
+    justify-content: center;
+    background: #fff;
+    border: none;
+    margin-bottom: 12px;
+    border: 1px solid #aaa;
+    span.Apple{
+      margin-right: 10px;
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      background-size: 20px;
+      background: url("../images/Apple_logo.png") 0 0 no-repeat;
+    }
+    span.google{
+      margin-right: 10px;
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      background-size: 20px;
+      background: url("../images/google_logo.png") 0 0 no-repeat;
+    }
+    span.github{
+      margin-right: 10px;
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      background-size: 20px;
+      background: url("../images/github_logo.png") 0 0 no-repeat;
+    }
+  }
+}

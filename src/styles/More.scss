@@ -1,0 +1,106 @@
+@import url(Common.scss);
+
+$background-color: #3a5cd5;
+
+header{
+  position: fixed;
+  z-index: 100;
+}
+main {
+  height: 85.8%;
+  .user_info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 72px;
+    width: 88%;
+    height: 80px;
+    background: #0a0a20;
+    border-radius: 5px;
+    margin-left: 6%;
+    margin-top: 55px;
+
+    .profile_img {
+      width: 50px;
+      height: 50px;
+      float: left;
+    }
+
+    .profile_info {
+      flex: auto;
+      display: flex;
+      flex-direction: column;
+      li{
+        list-style: none;
+        .profile_name {
+          font-size: 15px;
+          font-weight: bold;
+          margin-top: 16px;
+          display: flex;
+          left: 250px;
+          margin-bottom: 2px;
+          color: #fff;
+        }
+  
+        .profile_email {
+          color: #fff;
+          font-size: 12px;
+        }
+      }
+    }
+
+    .chat_img a {
+      font-size: 20px;
+      margin-right: 20px;
+      color: #fff;
+    }
+  }
+
+/* plus_friends */
+.plus_friends {
+  margin: 30px 0 0 6%;
+  width: 88%;
+  height: 280px;
+
+  > h2 {
+    font-family: 'Sora', sans-serif;
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+    padding: 5px 15px;
+    border-bottom: 1px solid #ddd;
+
+     span {
+      color: #8e9399;
+    }
+  }
+
+  > .plus_list {
+    display: flex;
+    flex-direction: column;    
+
+    > li {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      height: 60px;
+      border-bottom: 1px solid #ddd;
+      position: relative;
+
+      > a > svg {
+        margin: 0 15px;
+        font-size: 20px;
+        
+      }
+      >.icon{
+        position: absolute;
+        right: 10px;
+        line-height: 50%;
+        font-size: 15px;
+        float: right;
+        color: #888;
+      }
+    }
+  }
+}
+}

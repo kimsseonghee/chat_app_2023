@@ -1,0 +1,243 @@
+@import url(Common.scss);
+
+$background-color: #3a5cd5;
+header {
+  position: fixed;
+  z-index: 100;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 70px;
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  color: #555;
+  padding: 0 15px;
+  box-sizing: border-box;
+}
+// Status_bar
+.status_bar {
+  display: grid;
+  grid-template-columns: 1fr 1fr auto;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 15px;
+  height: 50%;
+  
+  .left_item,
+  .center_item,
+  .right_item {
+    display: flex;
+    align-items: center;
+  }
+
+  .icon {
+    font-size: 18px;
+    margin-right: 5px;
+    color: #555;
+  }
+
+  .center_item {
+    font-size: 18px;
+    font-weight: bold;
+
+
+  }
+}
+// title_bar
+.title {
+  margin: 0 auto;
+  position: relative;
+  top: 25px;
+  z-index: 100;
+  display: flex;
+  text-align: center;
+  height: 30px;
+  width: 100%;
+  box-sizing: border-box;
+  transform: translatey(-25px);
+   h1 {
+   flex: 1;
+    font-family: 'Sora', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    color: #555;
+  }
+
+  .left_item {
+    font-size: 18px;
+    flex: 1;
+    margin-left: 10px;
+    box-sizing: border-box;
+    font-size: 20px;
+    font-weight: bold;
+  }
+}
+/* main */
+.chatting {
+  display: flex;
+  flex-direction: column;
+  height: 100px;
+  width: 100%;
+  .date_info {
+    opacity: 0.5;
+    text-align: center;
+  }
+}
+/* 공통 */
+.chat_box {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+  .chat {
+    font-size: 16px;
+    line-height: 1;
+    margin: 5px;
+    padding: 10px 5px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    background: #eee;
+  }
+  button{
+    border: none;
+    width: 5px;
+    height: 10px;
+    border-radius: 10px;
+  }
+}
+/* my */
+.my {
+  align-self: flex-end;
+  align-items: flex-end;
+  max-width: 300px;
+  margin-right: 10px;
+  margin-top: 20px;
+  .chat {
+    background: $background-color;
+    color: #fff;
+  }
+  .chat_time {
+    position: absolute;
+    left: -35px;
+    bottom: 10px;
+    width: 100px;
+    opacity: 0.5;
+    span{
+      font-size: 5px;
+      color: #000;
+    }
+  }
+}
+/* other */
+.other{
+  display: flex;
+  flex-direction: column;
+    .profile_name{
+      font-family: 'Sora', sans-serif;
+      font-size: 15px;
+      color: #555;
+      position: absolute;
+      top: 10px;
+      left: 70px;
+      display: block;
+      font-weight: 500;
+    }
+    .chats{
+      display: flex;
+      flex-direction: column;
+      margin-left: 65px;
+      margin-top: -25px;
+      box-sizing: border-box;
+    }
+  .chat_time {
+    position: absolute;
+    left: 200px;
+    bottom: 10px;
+    width: 100px;
+    opacity: 0.5;
+    span{
+      font-size: 5px;
+      color: #000;
+    }
+  }
+  }
+/* footer */
+footer{
+  z-index: 200;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  fieldset{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    .text_box{
+      margin: 0 34px;
+      width: 100%;
+      height: 40px;
+      list-style: 40px;
+      border: 1px solid #fff;
+    }
+    .chat_plus{
+      position: absolute;
+      left: 0;
+      height: 40px;
+      line-height: 40px;
+      font-size: 20px;
+      padding: 0 8px;
+      color: #777;
+    }
+    .submit{
+      position: absolute;
+      right: 0;
+      height: 100%;
+      line-height: 40px;
+      padding: 0 8px;
+      color: #777;
+      font-size: 20px;
+      background: #fff;
+    }
+    .img{
+      position: absolute;
+      top: -200px;
+      width: 100%;
+      height: 200px;
+      background: rgba(199, 199, 199, 0.2);
+      &>img{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        width: 200px;
+      }
+      &>button{
+        position: absolute;
+        left: 0;
+        top: 0;
+        border: none;
+        background: none;
+        &>svg{
+          padding: 8px;
+          font-size: 20px;
+          color: rgba(0, 0, 0, 0.3);
+        }
+      }
+    }
+  }
+}
+.delet{
+  width: 100px;
+  a{
+    float: right;
+    right: 0;
+    width: 30px;
+    font-size: 8px;
+    font-family: 'Sora', sans-serif;
+    background: #eee;
+    border-radius: 3px;
+    color: #555;
+  }
+}
